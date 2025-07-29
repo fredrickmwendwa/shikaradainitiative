@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get involved with Shika Rada Initiative through volunteering, donations, or partnerships">
+    <meta name="keywords" content="volunteer Kenya, donate to youth, partner with NGO">
+    <title>Get Involved | Shika Rada Initiative</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Shika Rada Initiative Logo" class="logo-img">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="get-involved.html" class="nav-link active">Get Involved</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeInUp">
+                <h1 class="hero-title">Get Involved</h1>
+                <p class="hero-subtitle">Join us in empowering Kenya's youth through mentorship, creative arts, and community service</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Involvement Options -->
+    <section class="involvement-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">Ways to Get Involved</h2>
+                <p class="section-subtitle">Choose how you'd like to support our mission</p>
+            </div>
+            <div class="involvement-tabs" data-animate="fade-up">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="volunteer">Volunteer</button>
+                    <button class="tab-btn" data-tab="donate">Donate</button>
+                    <button class="tab-btn" data-tab="partner">Partner</button>
+                </div>
+                <div class="tab-content">
+                    <!-- Volunteer Tab -->
+                    <div class="tab-pane active" id="volunteer">
+                        <div class="tab-grid">
+                            <div class="tab-info">
+                                <h3>Volunteer With Us</h3>
+                                <p>Join our team of dedicated volunteers and make a direct impact in the lives of young people. We welcome individuals with various skills and talents to contribute to our programs.</p>
+                                <h4>Volunteer Opportunities:</h4>
+                                <ul>
+                                    <li>Mentorship and coaching</li>
+                                    <li>Event organization and support</li>
+                                    <li>Media and content creation</li>
+                                    <li>Community outreach programs</li>
+                                    <li>Administrative support</li>
+                                </ul>
+                                <p>Fill out the form to express your interest and we'll get back to you with available opportunities.</p>
+                            </div>
+                            <div class="tab-form">
+                                <form id="volunteerForm" action="https://formsubmit.co/shikaradainitiative@gmail.com" method="POST">
+                                    <input type="hidden" name="_subject" value="New Volunteer Application">
+                                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                                    <div class="form-group">
+                                        <label for="vol-name">Full Name*</label>
+                                        <input type="text" id="vol-name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vol-email">Email*</label>
+                                        <input type="email" id="vol-email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vol-phone">Phone Number*</label>
+                                        <input type="tel" id="vol-phone" name="phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vol-skills">Skills/Expertise*</label>
+                                        <textarea id="vol-skills" name="skills" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vol-availability">Availability*</label>
+                                        <select id="vol-availability" name="availability" required>
+                                            <option value="">Select availability</option>
+                                            <option value="weekdays">Weekdays</option>
+                                            <option value="weekends">Weekends</option>
+                                            <option value="both">Both</option>
+                                            <option value="flexible">Flexible</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vol-message">Why do you want to volunteer with us?*</label>
+                                        <textarea id="vol-message" name="message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Donate Tab -->
+                    <div class="tab-pane" id="donate">
+                        <div class="tab-grid">
+                            <div class="tab-info">
+                                <h3>Support Our Work</h3>
+                                <p>Your financial contribution helps us expand our programs and reach more young people across Kenya. Every donation makes a difference in empowering the next generation.</p>
+                                <h4>How Your Donation Helps:</h4>
+                                <ul>
+                                    <li>KES 500 provides sanitary pads for one school girl for a year</li>
+                                    <li>KES 5,000 supports one concert tour visit to a school</li>
+                                    <li>KES 10,000 provides partial school fees for a needy student</li>
+                                    <li>KES 50,000 supports studio equipment for youth training</li>
+                                </ul>
+                                <p>You can make a one-time donation or set up recurring monthly contributions.</p>
+                            </div>
+                            <div class="tab-form">
+                                <form id="donateForm" action="https://formsubmit.co/shikaradainitiative@gmail.com" method="POST">
+                                    <input type="hidden" name="_subject" value="New Donation Pledge">
+                                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                                    <div class="form-group">
+                                        <label for="don-name">Full Name*</label>
+                                        <input type="text" id="don-name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="don-email">Email*</label>
+                                        <input type="email" id="don-email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="don-phone">Phone Number</label>
+                                        <input type="tel" id="don-phone" name="phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="don-amount">Donation Amount (KES)*</label>
+                                        <input type="number" id="don-amount" name="amount" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="don-frequency">Donation Frequency*</label>
+                                        <select id="don-frequency" name="frequency" required>
+                                            <option value="">Select frequency</option>
+                                            <option value="one-time">One-time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="don-purpose">Purpose (Optional)</label>
+                                        <select id="don-purpose" name="purpose">
+                                            <option value="">Where needed most</option>
+                                            <option value="concerts">Concert Tours</option>
+                                            <option value="studio">Media Studio</option>
+                                            <option value="awards">Youth Awards</option>
+                                            <option value="foundation">Foundation</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="don-message">Message (Optional)</label>
+                                        <textarea id="don-message" name="message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Pledge Donation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Partner Tab -->
+                    <div class="tab-pane" id="partner">
+                        <div class="tab-grid">
+                            <div class="tab-info">
+                                <h3>Partner With Us</h3>
+                                <p>We collaborate with organizations, businesses, and institutions that share our vision for youth empowerment. Partnering with Shika Rada Initiative provides opportunities for meaningful corporate social responsibility and brand alignment with positive social impact.</p>
+                                <h4>Partnership Opportunities:</h4>
+                                <ul>
+                                    <li>Corporate Sponsorships</li>
+                                    <li>Program Partnerships</li>
+                                    <li>Media Collaborations</li>
+                                    <li>Community Outreach Projects</li>
+                                    <li>Employee Engagement Programs</li>
+                                </ul>
+                                <p>Fill out the form to explore partnership possibilities and we'll contact you to discuss further.</p>
+                            </div>
+                            <div class="tab-form">
+                                <form id="partnerForm" action="https://formsubmit.co/shikaradainitiative@gmail.com" method="POST">
+                                    <input type="hidden" name="_subject" value="New Partnership Inquiry">
+                                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                                    <div class="form-group">
+                                        <label for="part-name">Your Name/Organization*</label>
+                                        <input type="text" id="part-name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="part-email">Email*</label>
+                                        <input type="email" id="part-email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="part-phone">Phone Number*</label>
+                                        <input type="tel" id="part-phone" name="phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="part-org">Organization Type*</label>
+                                        <select id="part-org" name="organization_type" required>
+                                            <option value="">Select type</option>
+                                            <option value="corporate">Corporate/Business</option>
+                                            <option value="ngo">NGO/Non-profit</option>
+                                            <option value="institution">Educational Institution</option>
+                                            <option value="media">Media Company</option>
+                                            <option value="faith">Faith-based Organization</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="part-interest">Area of Interest*</label>
+                                        <select id="part-interest" name="interest" required>
+                                            <option value="">Select interest</option>
+                                            <option value="sponsorship">Sponsorship</option>
+                                            <option value="collaboration">Program Collaboration</option>
+                                            <option value="media">Media Partnership</option>
+                                            <option value="csr">CSR Initiative</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="part-message">Tell us about your organization and partnership ideas*</label>
+                                        <textarea id="part-message" name="message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions about getting involved</p>
+            </div>
+            <div class="faq-accordion" data-animate="fade-up">
+                <div class="accordion-item">
+                    <button class="accordion-btn">How can I volunteer if I have limited time?<i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>We offer various volunteer opportunities with flexible time commitments. You can participate in one-time events like concert tours or community service days, or contribute remotely with tasks like content creation or administrative support that can be done on your own schedule.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Are donations tax-deductible?<i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Yes, Shika Rada Initiative is a registered organization and all donations are tax-deductible. We provide official receipts for all contributions that can be used for tax purposes.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">What skills are needed for volunteering?<i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>We welcome volunteers with diverse skills and backgrounds. Common needed skills include mentorship/coaching, event planning, media production, photography, writing, teaching, and administrative support. However, we also value passion and willingness to learn above specific skills.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">How are donations used and accounted for?<i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>We maintain transparent financial practices with regular audits. Donations are used according to donor designation (if specified) or where most needed across our programs. We provide annual reports detailing our financials and program impacts to all donors and partners.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Can I specify how my donation is used?<i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Yes, you can designate your donation to specific programs like the Concert Tours, Studio, Awards, or Foundation. If no designation is made, your contribution will be used where most needed across our initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <h2>Still Have Questions?</h2>
+                <p>Contact us directly for more information about getting involved</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="#top" class="btn btn-secondary">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Shika Rada Initiative</h3>
+                    <p>Empowering Kenya's youth through mentorship, creative arts, and community service.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +254725225036</li>
+                        <li><i class="fas fa-phone"></i> +254114976082</li>
+                        <li><i class="fas fa-envelope"></i> shikaradainitiative@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Shika Rada Initiative. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/accordion.js"></script>
+</body>
+</html>
