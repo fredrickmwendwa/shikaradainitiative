@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const firstError = form.querySelector('[required]:invalid');
                 if (firstError) {
                     firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstError.focus();
                 }
             }
         });
@@ -53,6 +54,39 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Remove error message if exists
                 if (this.nextElementSibling && this.nextElementSibling.classList.contains('error-message')) {
                     this.nextElementSibling.remove();
+                }
+            }
+        });
+        
+        // Add focus styles
+        field.addEventListener('focus', function() {
+            this.style.borderColor = '#ce4244';
+            this.style.boxShadow = '0 0 0 2px rgba(206, 66, 68, 0.2)';
+        });
+        
+        field.addEventListener('blur', function() {
+            this.style.boxShadow = 'none';
+            if (this.value.trim()) {
+                this.style.borderColor = '#e0e0e0';
+            }
+        });
+    });
+    
+    // Email validation
+    document.querySelectorAll('input[type="email"]').forEach(emailField => {
+        emailField.addEventListener('blur', function() {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (this.value.trim() && !emailRegex.test(this.value)) {
+                this.style.borderColor = '#ce4244';
+                
+                if (!this.nextElementSibling || !this.nextElementSibling.classList.contains('error-message')) {
+                    const errorMsg = document.createElement('p');
+                    errorMsg.className = 'error-message';
+                    errorMsg.style.color = '#ce4244';
+                    errorMsg.style.marginTop = '5px';
+                    errorMsg.style.fontSize = '0.8rem';
+                    errorMsg.textContent = 'Please enter a valid email address';
+                    this.parentNode.insertBefore(errorMsg, this.nextSibling);
                 }
             }
         });

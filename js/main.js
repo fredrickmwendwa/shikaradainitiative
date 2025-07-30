@@ -90,4 +90,34 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    
+    // Add smooth scroll to all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Preload images
+    function preloadImages() {
+        const images = document.querySelectorAll('img[data-src]');
+        images.forEach(img => {
+            img.src = img.getAttribute('data-src');
+        });
+    }
+    
+    // Run after page load
+    window.addEventListener('load', function() {
+        preloadImages();
+    });
 });

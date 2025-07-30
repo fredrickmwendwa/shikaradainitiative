@@ -7,11 +7,12 @@
     <meta name="keywords" content="youth empowerment Kenya, mission, vision, impact">
     <title>About Us | Shika Rada Initiative</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <script src="js/lazysizes.min.js" async></script>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -19,7 +20,7 @@
         <div class="container">
             <nav class="navbar">
                 <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Shika Rada Initiative Logo" class="logo-img">
+                    <img src="images/logo.svg" alt="Shika Rada Initiative Logo" class="logo-img" width="150" height="50">
                 </a>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -53,21 +54,31 @@
             <div class="mission-grid">
                 <div class="mission-card" data-animate="fade-up" data-animate-delay="0.1s">
                     <div class="mission-icon">
-                        <img src="images/mission-icon.png" alt="Mission Icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
                     </div>
                     <h3>Our Mission</h3>
                     <p>To empower, mentor, and inspire young people in Kenya through creative expression, education, and values-based guidance rooted in biblical principles. We provide platforms for youth to express creativity, build skills, and engage with their communities.</p>
                 </div>
                 <div class="mission-card" data-animate="fade-up" data-animate-delay="0.2s">
                     <div class="mission-icon">
-                        <img src="images/vision-icon.png" alt="Vision Icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
                     </div>
                     <h3>Our Vision</h3>
                     <p>To build a future where Kenyan youth are empowered to become socially responsible leaders, innovators, and agents of positive change. We envision a platform that nurtures creativity, promotes education, and instills values that help young people thrive.</p>
                 </div>
                 <div class="mission-card" data-animate="fade-up" data-animate-delay="0.3s">
                     <div class="mission-icon">
-                        <img src="images/objectives-icon.png" alt="Objectives Icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
                     </div>
                     <h3>Our Objectives</h3>
                     <ul>
@@ -174,7 +185,6 @@
                     <p>Empowering Kenya's youth through mentorship, creative arts, and community service.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                         <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>

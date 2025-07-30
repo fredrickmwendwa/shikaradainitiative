@@ -7,11 +7,12 @@
     <meta name="keywords" content="youth projects Kenya, concert tours, media studio, awards, foundation">
     <title>Our Projects | Shika Rada Initiative</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <script src="js/lazysizes.min.js" async></script>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -19,7 +20,7 @@
         <div class="container">
             <nav class="navbar">
                 <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Shika Rada Initiative Logo" class="logo-img">
+                    <img src="images/logo.svg" alt="Shika Rada Initiative Logo" class="logo-img" width="150" height="50">
                 </a>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -54,7 +55,7 @@
                 <!-- Concert Tours -->
                 <div class="project-card" id="concerts" data-animate="fade-up">
                     <div class="project-image">
-                        <img src="images/concert-tour.jpg" alt="Shika Rada Concert Tours">
+                        <img data-src="images/concert-tour.webp" alt="Shika Rada Concert Tours" class="lazyload">
                     </div>
                     <div class="project-content">
                         <h2>Shika Rada Concert Tours</h2>
@@ -84,7 +85,7 @@
                 <!-- Studio -->
                 <div class="project-card" id="studio" data-animate="fade-up">
                     <div class="project-image">
-                        <img src="images/studio.jpg" alt="Shika Rada Studio">
+                        <img data-src="images/studio.webp" alt="Shika Rada Studio" class="lazyload">
                     </div>
                     <div class="project-content">
                         <h2>Shika Rada Studio</h2>
@@ -115,7 +116,7 @@
                 <!-- Awards -->
                 <div class="project-card" id="awards" data-animate="fade-up">
                     <div class="project-image">
-                        <img src="images/awards.jpg" alt="Shika Rada Awards">
+                        <img data-src="images/awards.webp" alt="Shika Rada Awards" class="lazyload">
                     </div>
                     <div class="project-content">
                         <h2>Shika Rada Awards</h2>
@@ -146,7 +147,7 @@
                 <!-- Foundation -->
                 <div class="project-card" id="foundation" data-animate="fade-up">
                     <div class="project-image">
-                        <img src="images/foundation.jpg" alt="Shika Rada Foundation">
+                        <img data-src="images/foundation.webp" alt="Shika Rada Foundation" class="lazyload">
                     </div>
                     <div class="project-content">
                         <h2>Shika Rada Foundation</h2>
@@ -200,7 +201,6 @@
                     <p>Empowering Kenya's youth through mentorship, creative arts, and community service.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                         <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>

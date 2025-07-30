@@ -11,11 +11,12 @@
     <meta property="og:type" content="website">
     <title>Shika Rada Initiative | Home</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <script src="js/lazysizes.min.js" async></script>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -23,7 +24,7 @@
         <div class="container">
             <nav class="navbar">
                 <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Shika Rada Initiative Logo" class="logo-img">
+                    <img src="images/logo.svg" alt="Shika Rada Initiative Logo" class="logo-img" width="150" height="50">
                 </a>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
@@ -68,17 +69,28 @@
                     <h3>We Serve:</h3>
                     <div class="demographic-grid">
                         <div class="demographic-card" data-animate="fade-up" data-animate-delay="0.1s">
-                            <i class="fas fa-graduation-cap"></i>
+                            <svg class="demographic-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
                             <h4>High School Students</h4>
                             <p>Ages 15-18</p>
                         </div>
                         <div class="demographic-card" data-animate="fade-up" data-animate-delay="0.2s">
-                            <i class="fas fa-university"></i>
+                            <svg class="demographic-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
                             <h4>University Students</h4>
                             <p>Ages 19-25</p>
                         </div>
                         <div class="demographic-card" data-animate="fade-up" data-animate-delay="0.3s">
-                            <i class="fas fa-briefcase"></i>
+                            <svg class="demographic-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
                             <h4>Young Adults</h4>
                             <p>Ages 26-35</p>
                         </div>
@@ -98,7 +110,7 @@
             <div class="initiatives-grid">
                 <div class="initiative-card" data-animate="fade-up" data-animate-delay="0.1s">
                     <div class="card-image">
-                        <img src="images/concert-tour.jpg" alt="Shika Rada Concert Tours">
+                        <img data-src="images/concert-tour.webp" alt="Shika Rada Concert Tours" class="lazyload">
                     </div>
                     <div class="card-content">
                         <h3>Concert Tours</h3>
@@ -108,7 +120,7 @@
                 </div>
                 <div class="initiative-card" data-animate="fade-up" data-animate-delay="0.2s">
                     <div class="card-image">
-                        <img src="images/studio.jpg" alt="Shika Rada Studio">
+                        <img data-src="images/studio.webp" alt="Shika Rada Studio" class="lazyload">
                     </div>
                     <div class="card-content">
                         <h3>Studio</h3>
@@ -118,7 +130,7 @@
                 </div>
                 <div class="initiative-card" data-animate="fade-up" data-animate-delay="0.3s">
                     <div class="card-image">
-                        <img src="images/awards.jpg" alt="Shika Rada Awards">
+                        <img data-src="images/awards.webp" alt="Shika Rada Awards" class="lazyload">
                     </div>
                     <div class="card-content">
                         <h3>Awards</h3>
@@ -128,7 +140,7 @@
                 </div>
                 <div class="initiative-card" data-animate="fade-up" data-animate-delay="0.4s">
                     <div class="card-image">
-                        <img src="images/foundation.jpg" alt="Shika Rada Foundation">
+                        <img data-src="images/foundation.webp" alt="Shika Rada Foundation" class="lazyload">
                     </div>
                     <div class="card-content">
                         <h3>Foundation</h3>
@@ -163,7 +175,6 @@
                     <p>Empowering Kenya's youth through mentorship, creative arts, and community service.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                         <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>

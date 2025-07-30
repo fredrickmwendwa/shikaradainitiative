@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 content.style.maxHeight = '0';
             }
             
-            // Close other accordion items
+            // Close other accordion items if needed
             accordionBtns.forEach(otherBtn => {
                 if (otherBtn !== btn && otherBtn.classList.contains('active')) {
                     otherBtn.classList.remove('active');
@@ -23,5 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+        
+        // Auto-expand first item if none are expanded
+        if (accordionBtns.length > 0 && !document.querySelector('.accordion-btn.active')) {
+            accordionBtns[0].click();
+        }
     });
 });
