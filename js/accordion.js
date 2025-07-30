@@ -1,32 +1,29 @@
+// FAQ Accordion Functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const accordionBtns = document.querySelectorAll('.accordion-btn');
+    const faqQuestions = document.querySelectorAll('.faq-question');
     
-    accordionBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            this.classList.toggle('active');
-            const content = this.nextElementSibling;
-            
-            if (this.classList.contains('active')) {
-                content.classList.add('active');
-                content.style.maxHeight = content.scrollHeight + 'px';
-            } else {
-                content.classList.remove('active');
-                content.style.maxHeight = '0';
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const currentlyActive = document.querySelector('.faq-question.active');
+            if(currentlyActive && currentlyActive !== question) {
+                currentlyActive.classList.remove('active');
+                currentlyActive.nextElementSibling.style.maxHeight = null;
             }
             
-            // Close other accordion items if needed
-            accordionBtns.forEach(otherBtn => {
-                if (otherBtn !== btn && otherBtn.classList.contains('active')) {
-                    otherBtn.classList.remove('active');
-                    otherBtn.nextElementSibling.classList.remove('active');
-                    otherBtn.nextElementSibling.style.maxHeight = '0';
-                }
-            });
+            question.classList.toggle('active');
+            const answer = question.nextElementSibling;
+            
+            if(question.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            } else {
+                answer.style.maxHeight = null;
+            }
         });
-        
-        // Auto-expand first item if none are expanded
-        if (accordionBtns.length > 0 && !document.querySelector('.accordion-btn.active')) {
-            accordionBtns[0].click();
-        }
     });
+    
+    // Open first question by default
+    if(faqQuestions.length > 0) {
+        faqQuestions[0].classList.add('active');
+        faqQuestions[0].nextElementSibling.style.maxHeight = faqQuestions[0].nextElementSibling.scrollHeight + 'px';
+    }
 });
