@@ -85,8 +85,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.classList.add('active');
                 
                 // Show corresponding tab pane
-                tabPanes.forEach(pane => pane.classList.remove('active'));
-                document.getElementById(tabId).classList.add('active');
+                tabPanes.forEach(pane => {
+                    pane.classList.remove('active');
+                    pane.style.display = 'none';
+                });
+                
+                const activePane = document.getElementById(tabId);
+                activePane.style.display = 'block';
+                setTimeout(() => {
+                    activePane.classList.add('active');
+                }, 10);
             });
         });
     }
